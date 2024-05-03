@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let n1 = parseFloat(prompt("Entre com um numero :"))
+        let n2 = parseFloat(prompt("Entre com um numero :"))
+        let n3 = parseFloat(prompt("Entre com um numero :"))
+        let n4 = parseFloat(prompt("Entre com um numero :"))
+        let n5 = parseFloat(prompt("Entre com um numero :"))
+        let n6 = parseFloat(prompt("Entre com um numero :"))
+        let numeros72 = []
+        let numeros71 = []
+
+        for (let i = 0; i <6; i ++) {
+            let numero =  prompt("Digite um numero " + (i + 1) + " numero :");
+
+            if(numero < 72) {
+                numeros.push(numeros71);
+            } else {
+                numeros.push(numeros72);
+            }
+        }
+        alert(numeros71);
+        alert(numeros72);
+
+        let soma = 0
+        let numeros = []
+        for (let i = 0; i < 6; i++) {
+        let numero =  parseFloat(prompt("Digite um numero"));
+        numeros.push(numero)
+                     
+        if (numero < 72) {
+        soma += numero
+        }         
+    }        
+        let valores;             
+        for (let i = 0; i < numeros.length; i++) {
+        valores += "\n" +numeros[i]
+        }             
+        alert(`A soma dos numeros ${soma} \n \n Valores informados: ${valores}`);
+
+    </script>
+</body>
+</html>

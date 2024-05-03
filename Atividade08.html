@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            function Nota() {
+    // Solicita ao usuário que insira a primeira nota
+    let n1 = parseFloat(prompt("Entre com a primeira nota; \nO número deve ser menor que 10 e maior que 0."));
+    // Verifica se a nota está dentro do intervalo válido
+    if (n1 < 10 && n1 > 0) {
+        return n1; // Retorna a nota se for válida
+    } else {
+        alert("Coloque um número menor que 10 e maior que 0"); // Alerta o usuário se a nota for inválida
+        return Nota(); // Chama recursivamente a função para que o usuário insira uma nova nota válida
+    }
+}
+
+function Nota2() {
+    // Solicita ao usuário que insira a segunda nota
+    let n2 = parseFloat(prompt("Entre com a segunda nota; \nO número deve ser menor que 10 e maior que 0."));
+    // Verifica se a nota está dentro do intervalo válido
+    if (n2 < 10 && n2 > 0) {
+        return n2; // Retorna a nota se for válida
+    } else {
+        alert("Coloque um número menor que 10 e maior que 0"); // Alerta o usuário se a nota for inválida
+        return Nota2(); // Chama recursivamente a função para que o usuário insira uma nova nota válida
+    }
+}
+
+function Nota3() {
+    // Solicita ao usuário que insira a terceira nota
+    let n3 = parseFloat(prompt("Entre com a terceira nota; \nO número deve ser menor que 10 e maior que 0."));
+    // Verifica se a nota está dentro do intervalo válido
+    if (n3 < 10 && n3 > 0) {
+        return n3; // Retorna a nota se for válida
+    } else {
+        alert("Coloque um número menor que 10 e maior que 0"); // Alerta o usuário se a nota for inválida
+        return Nota3(); // Chama recursivamente a função para que o usuário insira uma nova nota válida
+    }
+}
+
+function Nota4() {
+    // Solicita ao usuário que insira a quarta nota
+    let n4 = parseFloat(prompt("Entre com a quarta nota; \nO número deve ser menor que 10 e maior que 0."));
+    // Verifica se a nota está dentro do intervalo válido
+    if (n4 < 10 && n4 > 0) {
+        return n4; // Retorna a nota se for válida
+    } else {
+        alert("Coloque um número menor que 10 e maior que 0"); // Alerta o usuário se a nota for inválida
+        return Nota4(); // Chama recursivamente a função para que o usuário insira uma nova nota válida
+    }
+}
+
+// Chama as funções para obter as quatro notas
+let no1 = Nota();
+let no2 = Nota2();
+let no3 = Nota3();
+let no4 = Nota4();
+
+function calculo() {
+    // Calcula a média das notas
+    let media = (no1 + no2 + no3 + no4) / 4;
+    // Verifica se a média é maior ou igual a 5 e informa o usuário se ele passou ou não
+    if (media >= 5) {
+        alert("Você passou");
+    } else {
+        alert("Tente novamente");
+    }
+}
+
+// Chama a função para realizar o cálculo da média
+calculo();
+    </script>
+</body>
+</html>
